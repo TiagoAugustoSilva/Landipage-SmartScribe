@@ -14,6 +14,7 @@ Esta landing page tem como objetivo apresentar o aplicativo SmartScribe de forma
 - **VS Code + Live Server** para desenvolvimento local
 
 ## 📸 Prévia
+![ALT Text](img/ladinpage.png)
 
 ![SmartScribe Landing Preview](preview.jpg) <!-- Atualize com imagem real do projeto, se quiser -->
 
@@ -27,4 +28,4 @@ Clone este repositório:
 ```bash
 git clone https://github.com/seu-usuario/smartscribe-landingpage.git
 
-![ALT Text](img/ladinpage.png)
+
