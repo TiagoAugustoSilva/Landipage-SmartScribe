@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://kit.fontawesome.com/6dda5f6271.js" crossorigin="anonymous"></script>
+
+
+    <title>SmartScribe</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/logo-06-removebg-preview.png" alt="">
+                </a>
+            </div><!--fecha a tag Logo -->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#Especialidades">Especialidades</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                    <li><a href="#Projetos">Projetos</a></li>
+                    <li><a href="#fale">Fale Comigo</a></li>
+                    
+
+                </ul>
+            </nav>
+            <div class="btn-download">
+                <a href="https://play.google.com/store/apps/details?id=seu.package.name" target="_blank" class="btn-download">
+                    <i class="fa-solid fa-download" style="color: rgb(26, 27, 27);"></i> PlayStore
+                  </a>
+            </div><!--Fecha tag button-->
+        </div><!--fecha a tag interface-->
+    </header>
+
+    <main>
+    
+        <section class="topo-do-site ">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1><span style="color:#4f46e5;">SMART</span>SCRIBE SUA FORMA INTELIGENTE<br> DE ESCREVER<span style="color:#4f46e5;">.</span></h1>
+                        <p>Descubra a união perfeita entre praticidade, design e tecnologia com o <br>SmartScribe – onde cada função é pensada para impulsionar suas ideias.<br>  
+                            Organize, escreva e evolua. Este é o seu momento com <span style="color:#4f46e5;">SMARTSCRIBE.</span>
+                        </p>
+                       
+                    </div><!--flex-topo-site-->
+                    <div class="img-topo-site luz ">
+                        <img src="./img/reuniao02.png"
+                    </div>
+                
+
+                </div><!--flex -->
+            </div><!--interface - main-->
+        </section>
+
+        <section class="especialidades" id="Especialidades">
+            
+            <div class="interface">
+                <h2 class="titulo">APP <span style="color:#4f46e5;">ESPECIALIDADES .</span></h2>
+                
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Login</h3>
+                        <img src="./img/login-removebg-preview.png" alt="">
+
+                    </div><!--especialidades-box-->
+
+                    <div class="especialidades-box">
+                        <i class="fa-solid fa-house"></i>
+                        <h3>Home</h3>
+                        <img src="./img/home-gravar-removebg-preview.png" alt="">
+
+
+                    </div><!--especialidades-box-->
+
+                </div> <!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+
+        <section class="sobre" id="Sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="./img/selo_bugslife-removebg-preview.png" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2><span style="color:#4f46e5;">Bug’s</span> Life - Muito mais que desenvolvimento<span style="color:#4f46e5;">.</span></h2>
+                        <p>
+                          Somos a <strong>Bug’s Life</strong>, um grupo apaixonado por tecnologia, inovação e boas ideias. Onde muitos veem problemas, 
+                          nós enxergamos oportunidades de criar algo melhor. Nosso time atua com foco em qualidade, agilidade e, claro, com aquela dose 
+                          de bom humor que só quem já passou horas caçando um bug entende.
+                        </p>
+                        <p>
+                          De aplicações mobile a soluções web completas, desenvolvemos com inteligência, empatia e um olhar sempre voltado à experiência do usuário. 
+                          Nosso lema? <em>“Se apareceu um bug, é só mais uma chance de evoluir.”</em>
+                        </p>
+                        <p>
+                          🚀 Junte-se à revolução dev onde os bugs não são o fim — são o começo de algo genial.
+                        </p>
+
+                        <div class="btn-social" >
+                            <a href="https://github.com/TiagoAugustoSilva/UPXV_APP_SmartScribe"  target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/tiago-augusto-melo-silva-177127b9/"  target="_blank"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://web.whatsapp.com/send?phone=5515997842321"  target="_blank"><button><i
+                                        class="bi bi-whatsapp"></i></button></a>
+
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+
+        <section class="formulario" id="fale">
+            <div class="interface">
+                <h2 class="titulo">Entre em contato <span style="color:#4f46e5;">com a gente</span></h2>
+                <p class="text-footer">
+                    Tem dúvidas, sugestões ou quer simplesmente trocar uma ideia?<br> Preencha o formulário abaixo e retornaremos o mais breve possível.
+                    Sua mensagem é muito importante para nós!</p>
+                <form action="">
+                    <input type="text" placeholder="Seu nome completo:">
+                    <input type="text" placeholder="Seu e-mail:">
+                    <input type="text" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+
+                    <div class="btn-enviar"><input type="submit" value="Enviar"></div>
+
+                </form>
+                <button id="btnVoltarTopo" onclick="voltarAoTopo()"><i class="fa-solid fa-arrow-up"></i></button>
+            </div>
+
+            </div><!--interface-->
+        </section><!--formulario-->
+
+
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <br>
+
+            </div><!--line-footer-->
+
+        </div><!--interface-->
+    </footer>
+
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btnVoltarTopo").style.display = "block";
+            } else {
+                document.getElementById("btnVoltarTopo").style.display = "none";
+            }
+        }
+
+        function voltarAoTopo() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    
+
+</body>
+
+</html>

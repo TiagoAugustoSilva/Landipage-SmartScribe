@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400;1,500&display=swap');
+
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+
+}
+
+.logo img {
+    width: 120%;
+    height: 100px;
+    margin-top: -8px;
+    position: relative;
+ 
+    /*box-shadow: 0px 0px 8px rgba(243, 243, 243, 0.788);*/
+
+}
+
+
+.img2-topo-site {
+    margin-top: 45px;
+}
+
+.interface {
+    max-width: 2560px;
+
+}
+
+.flex {
+    display: flex;
+    padding-left: 100px;
+
+}
+
+
+
+.btn-download {
+    color: rgb(23, 24, 24);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-download:hover {
+    background: radial-gradient(circle, rgba(233, 54, 30, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+  }
+  
+
+
+/* Estilo Header */
+header {
+    padding: 0 3%;
+    background: radial-gradient(circle, rgba(3, 7, 15, 0.8) 60%, rgba(255, 255, 255, 0.89) 90%);
+
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    position: relative;
+    font-size: 22px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    font-weight: 500;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #4f46e5;
+    /* Cor do traço */
+    left: 50%;
+    bottom: -5px;
+    /* Ajuste a posição vertical do traço */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+header nav ul li:hover a::after {
+    width: 100%;
+    left: 0;
+}
+
+header nav ul li:hover {
+    transform: scale(1.05);
+    color: #0e0d0d;
+}
+
+
+
+/* Estilo Topo do Site */
+
+section .topo-do-site {
+    padding: 40px 10%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+
+
+.topo-do-site h1 {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 40px;
+    background: radial-gradient(circle, rgba(33, 148, 224, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+
+}
+
+/* Estilização do botão Voltar ao Topo */
+#btnVoltarTopo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 68px;
+    height: 73px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+    /* Alteração aqui */
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    background: radial-gradient(circle, rgba(33, 148, 224, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+}
+
+
+
+
+#btnVoltarTopo i {
+    font-size: 60px;
+    color: rgb(246, 247, 255);
+    margin-bottom: 20px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fffefe;
+    margin: 60px 0;
+    line-height: 20px;
+    position: relative;
+    width: 68%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(33, 148, 224, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    margin-top: 60px;
+    width: 100%
+        /*animation: flutuar 2s ease-in-out infinite alternate;*/
+
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px
+    }
+}
+
+
+/* Estilo das luzes */
+.luz {
+    position: relative;
+    width: 68%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(33, 148, 224, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+
+}
+
+
+/* Definindo a animação */
+@keyframes mudarCores {
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    50% {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+}
+
+
+
+
+
+
+/*Estilo das especialidades*/
+
+
+
+h2.titulo {
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+section.especialidades .especialidades-box img {
+    width: 20rem;
+}
+
+section.especialidades .especialidades-box {
+    margin-bottom: 120px;
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 1s;
+    cursor: pointer;
+    background: radial-gradient(circle, rgba(33, 148, 224, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+}
+
+/*efeito de sombra nas caixas*/
+section.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #4f46e5;
+}
+
+/*gap apicando a distancia entre as caixas com bordas*/
+section.especialidades .flex {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (caso necessário) */
+    gap: 100px;
+    flex-wrap: wrap; /* Pra funcionar bem em telas menores */
+}
+
+section.especialidades .especialidades-box h3 {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+section.especialidades .especialidades-box p {
+    color: rgb(255, 255, 255);
+
+
+}
+
+section.especialidades {
+    padding: 40px 4%;
+
+}
+
+
+
+section.especialidades .especialidades-box i {
+    font-size: 58px;
+    color: #4f46e5;
+}
+
+
+
+/*Estilo Sobre*/
+
+section.sobre {
+    padding: 40px 4%;
+    margin-bottom: 120px;
+
+}
+
+section.sobre .txt-sobre {
+    color: #fff;
+    margin-bottom: 100px;
+
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+/*light-height aproxima os textos */
+section.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+
+}
+
+
+section.sobre .txt-sobre p {
+    margin: 15px 0;
+    text-align: justify;
+
+}
+
+.img-sobre img {
+    margin-top: 50px;
+    width: 20rem;
+    transform: scale(1.05);
+    background: radial-gradient(circle, rgba(33, 148, 224, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+    border-radius: 20px;
+    color: #00FF08;
+
+}
+
+section.sobre .txt-sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e4d8d8;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 10px;
+    margin-top: 50px;
+}
+
+.btn-social button:hover {
+    color: #4f46e5;
+    transform: scale(1.05);
+}
+
+/* Estilo do portfólio*/
+
+section.portfolio {
+
+    padding: 5px 2%;
+    box-shadow: 0 0 40px 10px #ffffff1c;
+
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin: auto;
+
+}
+
+/*gap para distanciar a area de retangulo ou justify-contet-space-aroud*/
+section.portfolio .flex {
+    gap: 100px;
+    display: flex;
+    justify-content: center;
+    /* Centralizar horizontalmente */
+    align-items: center;
+    /* Centralizar verticalmente */
+
+}
+
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+section.portfolio .interface h2 {
+    margin-bottom: 40px;
+}
+
+/*overlay faz a rolagem escurece a cor*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1d1c9c;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*Estilo Formulario */
+
+section.formulario {
+    margin-top: 80px;
+    padding: 1px 2%;
+
+
+}
+
+/*use o margin 0 auto para centralizar o formulario*/
+/* use o margin 0 auto para centralizar o formulario */
+form {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* Adicionado para centralizar os inputs */
+    gap: 10px;
+    margin-top: 155px;
+    
+}
+
+form input,
+form textarea {
+    width: 50%;
+    background-color: #242222;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    max-width: 500px;
+    /* Adicionado para limitar a largura máxima */
+    min-width: 200px;
+    /* Adicionado para definir uma largura mínima */
+    background: radial-gradient(circle, rgba(33, 148, 224, 0.8) 10%, rgba(255, 255, 255, 0) 90%);
+    
+}
+
+/* resize não deixa o textarea ser redimensionado */
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 15px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 90px;
+    background-color: #4f46e5;
+    color: #fffdfd;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #1b1b1b;
+    transform: scale(1.05);
+}
+
+
+/*rodapé*/
+footer .interface {
+    margin-top: 50px;
+}
+
+footer .interface .line-footer hr {
+    color: #4f46e5;
+}
+
+
+.text-footer {
+    color: #f7f8f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/*deixando responsivo*/
+* Estilo geral */ @media only screen and (max-width: 768px) {
+
+    /* Ajustes para telas menores */
+    body {
+        font-size: 14px;
+
+    }
+
+
+    header .logo img {
+        width: 2rem;
+        /* Reduzir o tamanho do logo */
+    }
+
+    header nav ul li {
+        padding: 0 20px;
+
+        /* Reduzir o espaçamento entre os itens do menu */
+    }
+
+    section.topo-do-site .flex {
+        flex-direction: column;
+        /* Mudar a direção dos elementos */
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-topo-site img {
+        width: 200px;
+        /* Reduzir o tamanho da imagem */
+    }
+
+    .especialidades .flex {
+        flex-direction: column;
+        /* Mudar a direção dos elementos */
+        align-items: center;
+        text-align: center;
+    }
+
+    .especialidades-box {
+        width: 80%;
+        /* Reduzir a largura das caixas de especialidades */
+    }
+
+    .img-sobre img {
+        width: 250px;
+        /* Reduzir o tamanho da imagem */
+    }
+
+    .btn-social button {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .flex {
+        flex-direction: column;
+        /* Mudar a direção dos elementos */
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-port {
+        width: 80%;
+        /* Reduzir a largura das imagens do portfólio */
+        height: auto;
+    }
+
+    form {
+        max-width: 90%;
+        /* Reduzir a largura do formulário */
+    }
+
+    form input,
+    form textarea {
+        padding: 15px 10px;
+        /* Reduzir o preenchimento dos inputs */
+        font-size: 16px;
+        /* Reduzir o tamanho da fonte */
+    }
+
+    form .btn-enviar input {
+        width: 100%;
+        /* Preencher toda a largura do botão */
+    }
+}
+
+
+@media only screen and (min-width: 2560px) {
+    .interface {
+        margin: 0 auto;
+        /* Centraliza a interface na tela */
+        padding-left: 0;
+        /* Remove o padding esquerdo da interface para centralizar conteúdos */
+    }
+
+    section.topo-do-site .flex,
+    section.especialidades .flex,
+    section.sobre .flex,
+    section.portfolio .flex {
+        padding-left: 0;
+        /* Remove o padding esquerdo dos contêineres flexíveis para centralizar os elementos */
+    }
+}
