@@ -14,7 +14,9 @@ Esta landing page tem como objetivo apresentar o aplicativo SmartScribe de forma
 - **VS Code + Live Server** para desenvolvimento local
 
 ## 📸 Prévia
-![ALT Text](img/ladinpage.png)
+![ALT Text](img/lading-page-1.png)
+![ALT Text](img/lading-img-2.png)
+
 
 
 ## 📲 Link para Download
