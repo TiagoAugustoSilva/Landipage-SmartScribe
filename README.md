@@ -16,6 +16,8 @@ Esta landing page tem como objetivo apresentar o aplicativo SmartScribe de forma
 ## 📸 Prévia
 ![ALT Text](img/lading-page-1.png)
 ![ALT Text](img/lading-img-2.png)
+![ALT Text](img/laing-img-3.png)
+![ALT Text](img/lading-img-4.png)
 
 
 
